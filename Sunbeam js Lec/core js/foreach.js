@@ -16,3 +16,4 @@ for(const el of arr1)
 // foreach not used for value processing
 console.log("Iteration using foreach method: ")
 arr1.forEach((val)=>console.log(val))
+

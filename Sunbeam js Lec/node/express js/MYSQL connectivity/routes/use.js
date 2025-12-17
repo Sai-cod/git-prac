@@ -1,0 +1,14 @@
+const express = require('express')
+const router = express.Router()
+const pool = require('../db/pool')
+const result = require("../utils/result")
+
+
+router.get('/',(req, res)=>{
+    const sql = `SELECT * FROM users`
+    pool.query(sql,(error, data)=>{
+        res.send(result.createResult(error, data))
+    })
+})
+
+module.exports = router

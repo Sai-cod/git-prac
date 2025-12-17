@@ -27,6 +27,7 @@ body{
     border-radius: 20px;
     min-width: 443px;
     box-shadow: 1px 1px 15px   rgb(99, 206, 99);
+    
 }
 
 #title{
@@ -119,3 +120,5 @@ body{
     /* border: 2px solid rgb(229, 68, 68); */
     opacity: .8;
 }
+
+
