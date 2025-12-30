@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img
+          src="logo.png"
+          alt="Sunbeam Training Institute Logo"
+          height="100"
+        />
+      </div>
+      <div class="title-text"><h1>Sunbeam Registration Form</h1></div>
+    </header>
+
+    <main class="container">
+      <section class="video-section">
+        <div class="responsive-video">
+          <iframe
+            width="600"
+            height="240"
+            src="https://www.youtube.com/embed/02q9aAVv1NI"
+            title="Sunbeam Institute of IT - Pune &amp; Karad"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p class="video-caption">Sunbeam YT Video</p>
+      </section>
+
+      <section class="form-container">
+        <form action="#" method="POST" class="registration-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="birthdate">BirthDate:</label>
+            <input type="date" id="birthdate" name="birthdate" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea
+              id="address"
+              name="address"
+              placeholder="Enter your address"
+              rows="2"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-group radio-group">
+            <label>Gender:</label>
+            <div class="gender-options">
+              <input
+                type="radio"
+                value="Male"
+                name="gender"
+                id="gender-male"
+                required
+              />
+              <label for="gender-male">Male</label>
+
+              <input
+                type="radio"
+                value="Female"
+                name="gender"
+                id="gender-female"
+                required
+              />
+              <label for="gender-female">Female</label>
+            </div>
+          </div>
+
+          <div class="form-group file-upload-group">
+            <label for="upphoto">Upload Photo:</label>
+            <input type="file" name="photo" id="upphoto" required />
+          </div>
+
+          <div class="form-group select-group">
+            <label for="dropdown-course">Select Your Course:</label>
+            <select name="dropdown-course" id="dropdown-course" required>
+              <option value="" disabled selected>-- Select Course --</option>
+              <option value="MERN">MERN</option>
+              <option value="CyberSecurity">Cyber Security</option>
+              <option value="AIDS">AIDS</option>
+              <option value="WebUsingPython">Web Using Python</option>
+            </select>
+          </div>
+
+          <div class="form-group checkbox-group">
+            <label>Skill Set:</label>
+            <div class="check-skills-options">
+              <input
+                type="checkbox"
+                name="skillset[]"
+                id="skill-java"
+                value="Java"
+              />
+              <label for="skill-java">Java</label>
+              <input
+                type="checkbox"
+                name="skillset[]"
+                id="skill-python"
+                value="Python"
+              />
+              <label for="skill-python">Python</label>
+              <input
+                type="checkbox"
+                name="skillset[]"
+                id="skill-cpp"
+                value="CPP"
+              />
+              <label for="skill-cpp">CPP</label>
+              <input
+                type="checkbox"
+                name="skillset[]"
+                id="skill-os"
+                value="OS"
+              />
+              <label for="skill-os">OS</label>
+            </div>
+          </div>
+
+          <div class="form-group buttons">
+            <button type="submit" class="btn-submit">Register</button>
+            <button type="reset" class="btn-reset">Reset</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
